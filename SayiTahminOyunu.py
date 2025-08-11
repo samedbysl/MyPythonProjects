@@ -21,7 +21,7 @@ while True:
             print('Sayıyı doğru tahmin ettiniz.')
             print('Yeni oyun başlatılıyor... \n')
             break
-        if t!=s and y!=1:
+        if 0>=t>=100 and t!=s and y!=1:
             if t > s:
                 print('Daha küçük bir sayı deneyiniz.')
             elif t < s:
