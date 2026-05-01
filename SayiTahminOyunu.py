@@ -1,5 +1,6 @@
 #sayı tahmin oyunu
 import random as r
+#sdfghjk
 while True:
     s = r.randint(0,100)
     print('Sayı tahmin etme oyunuma hoşgeldiniz:)')
@@ -17,11 +18,13 @@ while True:
             break
         if t < -1 or t > 100:
             print('Lütfen 0-100 arasında bir sayı giriniz. \n')
+            continue
+
         if t==s :
             print('Sayıyı doğru tahmin ettiniz.')
             print('Yeni oyun başlatılıyor... \n')
             break
-        if 0>=t>=100 and t!=s and y!=1:
+        if t!=s and y!=1:
             if t > s:
                 print('Daha küçük bir sayı deneyiniz.')
             elif t < s:
